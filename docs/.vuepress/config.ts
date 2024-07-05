@@ -2,7 +2,7 @@ import { defineUserConfig } from 'vuepress';
 import { getDirname, path } from 'vuepress/utils';
 import { viteBundler } from '@vuepress/bundler-vite';
 import { plumeTheme } from 'vuepress-theme-plume';
-
+import { mdEnhancePlugin } from 'vuepress-plugin-md-enhance';
 import notes from './notes';
 
 const __dirname = getDirname(import.meta.url);
@@ -48,4 +48,5 @@ export default defineUserConfig({
   // 指定客户端配置文件的路径: https://v2.vuepress.vuejs.org/zh/advanced/cookbook/usage-of-client-config.html#%E5%AE%A2%E6%88%B7%E7%AB%AF%E9%85%8D%E7%BD%AE%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95
   clientConfigFile: path.resolve(__dirname, './client.ts'),
   bundler: viteBundler(),
+  plugins: [mdEnhancePlugin({ vuePlayground: true })],
 });

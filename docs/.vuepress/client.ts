@@ -1,6 +1,11 @@
 import { provide, ref } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import { defineClientConfig } from 'vuepress/client';
+import { defineVuePlaygroundConfig } from 'vuepress-plugin-md-enhance/client';
+
+defineVuePlaygroundConfig({
+  // 在此设置 @vue/repl 选项
+});
 
 export default defineClientConfig({
   enhance({ app, router, siteData }) {

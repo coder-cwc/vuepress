@@ -11,7 +11,13 @@ importers:
       vue-router:
         specifier: ^4.4.0
         version: 4.4.0(vue@3.4.31(typescript@5.5.3))
+      vuepress-plugin-md-enhance:
+        specifier: 2.0.0-rc.50
+        version: 2.0.0-rc.50(@vue/repl@4.3.1)(katex@0.16.10)(markdown-it@14.1.0)(typescript@5.5.3)(vuepress@2.0.0-rc.14(@vuepress/bundler-vite@2.0.0-rc.14(@types/node@20.14.9)(sass@1.77.6)(typescript@5.5.3))(typescript@5.5.3)(vue@3.4.31(typescript@5.5.3)))
     devDependencies:
+      '@vue/repl':
+        specifier: ^4.3.1
+        version: 4.3.1
       '@vuepress/bundler-vite':
         specifier: 2.0.0-rc.14
         version: 2.0.0-rc.14(@types/node@20.14.9)(sass@1.77.6)(typescript@5.5.3)
@@ -23,7 +29,7 @@ importers:
         version: 2.0.0-rc.14(@vuepress/bundler-vite@2.0.0-rc.14(@types/node@20.14.9)(sass@1.77.6)(typescript@5.5.3))(typescript@5.5.3)(vue@3.4.31(typescript@5.5.3))
       vuepress-theme-plume:
         specifier: 1.0.0-rc.72
-        version: 1.0.0-rc.72(@algolia/client-search@4.24.0)(markdown-it@14.1.0)(search-insights@2.14.0)(typescript@5.5.3)(vuepress@2.0.0-rc.14(@vuepress/bundler-vite@2.0.0-rc.14(@types/node@20.14.9)(sass@1.77.6)(typescript@5.5.3))(typescript@5.5.3)(vue@3.4.31(typescript@5.5.3)))
+        version: 1.0.0-rc.72(@algolia/client-search@4.24.0)(@vue/repl@4.3.1)(markdown-it@14.1.0)(search-insights@2.14.0)(typescript@5.5.3)(vuepress@2.0.0-rc.14(@vuepress/bundler-vite@2.0.0-rc.14(@types/node@20.14.9)(sass@1.77.6)(typescript@5.5.3))(typescript@5.5.3)(vue@3.4.31(typescript@5.5.3)))
 
 packages:
 
@@ -750,6 +756,9 @@ packages:
 
   '@vue/reactivity@3.4.31':
     resolution: {integrity: sha512-VGkTani8SOoVkZNds1PfJ/T1SlAIOf8E58PGAhIOUDYPC4GAmFA2u/E14TDAFcf3vVDKunc4QqCe/SHr8xC65Q==}
+
+  '@vue/repl@4.3.1':
+    resolution: {integrity: sha512-yzUuLhR+MqOGBDES+xbnm27SfPIEv7XKwhFWWpQhL7HUbXj77GVu+x50Q56JhCWWKTUJzk9MOvAn7bSgdvB5og==}
 
   '@vue/runtime-core@3.4.31':
     resolution: {integrity: sha512-LDkztxeUPazxG/p8c5JDDKPfkCDBkkiNLVNf7XZIUnJ+66GVGkP+TIh34+8LtPisZ+HMWl2zqhIw0xN5MwU1cw==}
@@ -2704,6 +2713,8 @@ snapshots:
     dependencies:
       '@vue/shared': 3.4.31
 
+  '@vue/repl@4.3.1': {}
+
   '@vue/runtime-core@3.4.31':
     dependencies:
       '@vue/reactivity': 3.4.31
@@ -4178,7 +4189,7 @@ snapshots:
     optionalDependencies:
       typescript: 5.5.3
 
-  vuepress-plugin-md-enhance@2.0.0-rc.50(katex@0.16.10)(markdown-it@14.1.0)(typescript@5.5.3)(vuepress@2.0.0-rc.14(@vuepress/bundler-vite@2.0.0-rc.14(@types/node@20.14.9)(sass@1.77.6)(typescript@5.5.3))(typescript@5.5.3)(vue@3.4.31(typescript@5.5.3))):
+  vuepress-plugin-md-enhance@2.0.0-rc.50(@vue/repl@4.3.1)(katex@0.16.10)(markdown-it@14.1.0)(typescript@5.5.3)(vuepress@2.0.0-rc.14(@vuepress/bundler-vite@2.0.0-rc.14(@types/node@20.14.9)(sass@1.77.6)(typescript@5.5.3))(typescript@5.5.3)(vue@3.4.31(typescript@5.5.3))):
     dependencies:
       '@mdit/plugin-alert': 0.12.0(markdown-it@14.1.0)
       '@mdit/plugin-align': 0.12.0(markdown-it@14.1.0)
@@ -4213,6 +4224,7 @@ snapshots:
       vuepress: 2.0.0-rc.14(@vuepress/bundler-vite@2.0.0-rc.14(@types/node@20.14.9)(sass@1.77.6)(typescript@5.5.3))(typescript@5.5.3)(vue@3.4.31(typescript@5.5.3))
       vuepress-shared: 2.0.0-rc.50(typescript@5.5.3)(vuepress@2.0.0-rc.14(@vuepress/bundler-vite@2.0.0-rc.14(@types/node@20.14.9)(sass@1.77.6)(typescript@5.5.3))(typescript@5.5.3)(vue@3.4.31(typescript@5.5.3)))
     optionalDependencies:
+      '@vue/repl': 4.3.1
       katex: 0.16.10
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -4253,7 +4265,7 @@ snapshots:
       - '@vue/composition-api'
       - typescript
 
-  vuepress-theme-plume@1.0.0-rc.72(@algolia/client-search@4.24.0)(markdown-it@14.1.0)(search-insights@2.14.0)(typescript@5.5.3)(vuepress@2.0.0-rc.14(@vuepress/bundler-vite@2.0.0-rc.14(@types/node@20.14.9)(sass@1.77.6)(typescript@5.5.3))(typescript@5.5.3)(vue@3.4.31(typescript@5.5.3))):
+  vuepress-theme-plume@1.0.0-rc.72(@algolia/client-search@4.24.0)(@vue/repl@4.3.1)(markdown-it@14.1.0)(search-insights@2.14.0)(typescript@5.5.3)(vuepress@2.0.0-rc.14(@vuepress/bundler-vite@2.0.0-rc.14(@types/node@20.14.9)(sass@1.77.6)(typescript@5.5.3))(typescript@5.5.3)(vue@3.4.31(typescript@5.5.3))):
     dependencies:
       '@pengzhanbo/utils': 1.1.2
       '@vuepress-plume/plugin-auto-frontmatter': 1.0.0-rc.72(vuepress@2.0.0-rc.14(@vuepress/bundler-vite@2.0.0-rc.14(@types/node@20.14.9)(sass@1.77.6)(typescript@5.5.3))(typescript@5.5.3)(vue@3.4.31(typescript@5.5.3)))
@@ -4288,7 +4300,7 @@ snapshots:
       vue: 3.4.31(typescript@5.5.3)
       vue-router: 4.4.0(vue@3.4.31(typescript@5.5.3))
       vuepress: 2.0.0-rc.14(@vuepress/bundler-vite@2.0.0-rc.14(@types/node@20.14.9)(sass@1.77.6)(typescript@5.5.3))(typescript@5.5.3)(vue@3.4.31(typescript@5.5.3))
-      vuepress-plugin-md-enhance: 2.0.0-rc.50(katex@0.16.10)(markdown-it@14.1.0)(typescript@5.5.3)(vuepress@2.0.0-rc.14(@vuepress/bundler-vite@2.0.0-rc.14(@types/node@20.14.9)(sass@1.77.6)(typescript@5.5.3))(typescript@5.5.3)(vue@3.4.31(typescript@5.5.3)))
+      vuepress-plugin-md-enhance: 2.0.0-rc.50(@vue/repl@4.3.1)(katex@0.16.10)(markdown-it@14.1.0)(typescript@5.5.3)(vuepress@2.0.0-rc.14(@vuepress/bundler-vite@2.0.0-rc.14(@types/node@20.14.9)(sass@1.77.6)(typescript@5.5.3))(typescript@5.5.3)(vue@3.4.31(typescript@5.5.3)))
       vuepress-plugin-md-power: 1.0.0-rc.72(typescript@5.5.3)(vuepress@2.0.0-rc.14(@vuepress/bundler-vite@2.0.0-rc.14(@types/node@20.14.9)(sass@1.77.6)(typescript@5.5.3))(typescript@5.5.3)(vue@3.4.31(typescript@5.5.3)))
     transitivePeerDependencies:
       - '@algolia/client-search'

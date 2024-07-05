@@ -5,7 +5,7 @@ createTime: 2024/07/02 17:34:49
 permalink: /typescript/g9hnvrlb/
 ---
 
-::: tabs#sort
+<!-- ::: tabs#sort
 
 @tab 冒泡排序
 
@@ -80,5 +80,23 @@ const sortedArray = insertionSort(unsortedArray);
 console.log('已排序数组:', sortedArray);
 ```
 
-:::
+::: -->
 
+::: vue-playground Vue 交互演示 1
+
+@file App.vue
+
+```vue
+<script setup>
+import { ref } from 'vue';
+
+const msg = ref('你好交互演示!');
+</script>
+
+<template>
+  <h1>{{ msg }}</h1>
+  <input v-model="msg" />
+</template>
+```
+
+:::
