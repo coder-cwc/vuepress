@@ -1,0 +1,4 @@
+pre-*-bkcodeai
+node_modules
+.temp
+.cache
